@@ -1,0 +1,31 @@
+import flask as fs
+from flask_sqlalchemy import SQLAlchemy
+from flask import jsonify, request
+from flask import render_template
+import datetime
+from sqlalchemy import DateTime
+from sqlalchemy.sql import func
+from flask_marshmallow import Marshmallow
+from marshmallow import Schema
+from transformers import pipeline
+
+application = fs.Flask(__name__)
+application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+application.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost/liblog'
+application.debug = True
+db = SQLAlchemy(application)
+ma = Marshmallow(application)
+
+class Sources(db.Model):
+    __tablename__ = 'Sources1'
+    title = db.Column(db.String(200),primary_key=True)
+    description = db.Column(db.String(1770), nullable=False)
+
+
+
+
+    def __init__(self, title, description):
+        self.title = title
+        self.description = description
+
+        <p> id <input type = "number" step="1" name = "id" /></p>
