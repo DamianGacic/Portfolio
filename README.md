@@ -1,3 +1,3 @@
 # Portfolio
 
-This portfolio is a subset of my work that is meant to demonstrate my ability to create basic software solutions, no more, no less.
+This Portfolio is meant to showcase a variety of what i do, from small programs that can be finished in a day, to bigger passion projects. I am also including  stuff like my leetcode solutions to keep track of and showcase my learning process.
