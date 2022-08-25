@@ -33,10 +33,10 @@ void ft_putnbr_base(int nbr, char *base)
     }
     
 }
-
+//test
 int main()
 {
-    char s2[40] = "01";
-    ft_putnbr_base(2135234,s2);
+    char base[40] = "0123ABCPoV";
+    ft_putnbr_base(2135234,base);
     return 0;
 }
