@@ -13,7 +13,7 @@ void ft_putnbr_base(int nbr, char *base)
     {
         base_size++;
     }
-    char array[nbr/base_size + 1];
+    char array[42];
 
     i = 0;
     while (nbr > 0)
