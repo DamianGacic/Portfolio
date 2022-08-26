@@ -7,13 +7,23 @@ void ft_putnbr_base(int nbr, char *base)
     int base_size;
     int i;
     int x;
+    char array[42];
 
     base_size = 0;
     while (base[base_size] != '\0')
     {
         base_size++;
     }
-    char array[42];
+    if(nbr < 0)
+	    {
+            if(nbr == -2147483648)
+            {
+                write(1, &"-2147483648", 12);	
+                return;
+            }
+            write(1, &"-", 1);
+            nbr = nbr * (-1);
+	    }
 
     i = 0;
     while (nbr > 0)
