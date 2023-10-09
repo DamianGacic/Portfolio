@@ -33,20 +33,18 @@ void ft_putnbr_base(int nbr, char *base)
     x = base[x];
     array[i] = x;
     i++;
-    write(1, &x, 1);
     }  
-    printf("\n");
     while (i >= '\0')
     {
         write(1, &array[i], 1);
         i--;
     }
-    
+    printf("\n");
 }
 //test
 int main()
 {
-    char base[40] = "0123ABCPoV";
-    ft_putnbr_base(2135234,base);
+    char base[40] = "0123ABCPoVZ";
+    ft_putnbr_base(42,base);
     return 0;
 }
