@@ -1,7 +1,0 @@
-flask
-flask_sqlalchemy
-datetime
-sqlalchemy
-flask_marshmallow
-marshmallow
-transformers
