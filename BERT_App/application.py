@@ -106,19 +106,6 @@ def postedSource():
 
     #return render_template('data.html',form_data = form_data)
 
-@application.route('/getSources', methods=['GET'])
-def getSources():
-    AllSources = Sources.query.all()
-    output = []
-    for source in AllSources:
-        CurrSource = {}
-        CurrSource['id']= source.id
-        CurrSource['title'] = source.title
-        CurrSource['description'] = source.description
-        
-        output.append(CurrSource)
-    return jsonify(output)        
-
 @application.route('/viewSources', methods=['GET'])
 def viewSources():
     AllSources = Sources.query.all()
