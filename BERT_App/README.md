@@ -1,1 +1,3 @@
-I know how unimpressive this is in 2023, but i built it before ChatGpt was a thing! 
+This simple web app (locally hosted for now) gives the user the ability to store pieces of text and apply the "question-answering" capability of Google's language model BERT (Bidirectional Encoder Representations from Transformers) using the pieces of text as context.
+
+ This may seem tedious and unnecessary in the times of chatGPT, but given the correct context a well trained and fine-tuned BERT-based model can vastly outperform chatgpt in semantic understanding of a specific Text. BERTs lack of generative ability is a feature, not a bug. The model is pre-trained in a similar way to GPT models and can be prompted the same way, but the output will very closely resemble pieces of the Text given as reference, avoiding The common problem of semantic leaps of generative models.

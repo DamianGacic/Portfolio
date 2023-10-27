@@ -12,11 +12,14 @@ from transformers import pipeline
 
 nlp = pipeline("question-answering")
 
- #   context = r"""
-  #  """
-  #  result = nlp(question="What are the three levels of knowledge?", context=context)
- #   print(f"Answer: '{result['answer']}'")
- #   print(result)
+
+# Kahneman example:
+# context = r"""
+#       (context)
+#  """
+# result = nlp(question="What are the three levels of knowledge?", context=context)
+# print(f"Answer: '{result['answer']}'")
+# print(result)
 
 
 
@@ -152,8 +155,6 @@ def get_todo(id):
     context = source.description
     result = nlp(question=question, context=context)
     return (render_template("new.html")).format(result['answer'],result['score'])
-
-
 
 
 
